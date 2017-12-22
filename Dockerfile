@@ -1,9 +1,6 @@
-FROM nginx:1.7
+FROM nginx:alpine
 
-MAINTAINER Container Solutions <info@container-solutions.com>
-
-# If you are reading our code, you should think about working with us.
-# http://www.container-solutions.com/careers
+MAINTAINER Via Varejo <maicon.peixinho@viavarejo.com.br>
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY entrypoint.sh /entrypoint.sh
